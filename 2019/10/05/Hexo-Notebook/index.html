@@ -1,0 +1,495 @@
+<!DOCTYPE HTML>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>Hexo-Notebook | Andrew&#39;s Blog</title>
+  <meta name="author" content="Andrew">
+  
+  <meta name="description" content="A Primitive Post of ipynb&amp;#182;
+
+
+
+
+
+In&amp;nbsp;[1]:
+
+    
+!sudo ln -sf `which python` /usr/bin/python
+!cd ~/hexo/node_modules &amp;amp;&amp;amp; rm -rf hexo-ipy">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Hexo-Notebook">
+  <meta property="og:site_name" content="Andrew&#39;s Blog">
+
+  
+    <meta property="og:image" content="undefined">
+  
+
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/notebook.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+
+
+
+</head>
+</html>
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">Andrew&#39;s Blog</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class="fa fa-archive"></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="All the categories.">
+			  <i class="fa fa-folder"></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class="fa fa-tags"></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class="fa fa-user"></i>About
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header">		
+			<h1> Hexo-Notebook</h1>
+		</div>		
+	
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div class="col-md-9">
+	
+
+			
+
+	<!-- content -->
+	<div class="mypage">
+	    <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="A-Primitive-Post-of-ipynb">A Primitive Post of ipynb<a class="anchor-link" href="#A-Primitive-Post-of-ipynb">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>sudo ln -sf <span class="sb">`</span>which python<span class="sb">`</span> /usr/bin/python
+<span class="o">!</span><span class="nb">cd</span> ~/hexo/node_modules <span class="o">&amp;&amp;</span> rm -rf hexo-ipynb
+<span class="o">!</span><span class="nb">cd</span> ~/hexo/node_modules <span class="o">&amp;&amp;</span> git clone --branch fix/freeman https://github.com/seii-saintway/hexo-ipynb.git
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Cloning into &#39;hexo-ipynb&#39;...
+remote: Enumerating objects: 58, done.
+remote: Total 58 (delta 0), reused 0 (delta 0), pack-reused 58
+Unpacking objects: 100% (58/58), done.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>rm ~/hexo/source/_posts/Hexo-Notebook.md
+<span class="o">!</span><span class="nb">cd</span> ~/hexo <span class="o">&amp;&amp;</span> node_modules/hexo/bin/hexo new post Hexo-Notebook
+<span class="o">!</span><span class="nb">echo</span> <span class="s1">&#39;{% asset_ipynb notebooks/Hexo-Notebook.ipynb %}&#39;</span> &gt;&gt; ~/hexo/source/_posts/Hexo-Notebook.md
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(node:16780) [DEP0061] DeprecationWarning: fs.SyncWriteStream is deprecated.
+<span class="ansi-green-fg">INFO </span> Created: <span class="ansi-magenta-fg">~/hexo/source/_posts/Hexo-Notebook.md</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span><span class="nb">cd</span> ~/hexo <span class="o">&amp;&amp;</span> node_modules/hexo/bin/hexo clean
+<span class="o">!</span><span class="nb">cd</span> ~/hexo <span class="o">&amp;&amp;</span> node_modules/hexo/bin/hexo server --debug
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span><span class="nb">cd</span> ~/hexo <span class="o">&amp;&amp;</span> node_modules/hexo/bin/hexo generate --deploy
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(node:16825) [DEP0061] DeprecationWarning: fs.SyncWriteStream is deprecated.
+<span class="ansi-green-fg">INFO </span> Start processing
+<span class="ansi-green-fg">INFO </span> Files loaded in <span class="ansi-cyan-fg">681 ms</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">favicon.png</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">about/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">categories/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">tags/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">archives/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">notebooks/Hexo-Notebook.ipynb</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">fancybox/blank.gif</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">fonts/fontawesome-webfont.eot</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">img/github-sprite.png</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">fancybox/jquery.fancybox.css</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">notebooks/Jupyter-Magic.ipynb</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">fancybox/fancybox_loading.gif</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">fancybox/fancybox_loading@2x.gif</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">fancybox/fancybox_overlay.png</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">fancybox/fancybox_sprite.png</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">fancybox/fancybox_sprite@2x.png</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">fonts/fontawesome-webfont.woff</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">img/glyphicons-halflings-white.png</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">img/glyphicons-halflings.png</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">img/grid-18px-masked.png</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">img/grid-baseline-20px.png</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">archives/page/2/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">archives/2013/01/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">archives/2015/09/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">archives/2016/02/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">archives/2017/07/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">archives/2018/03/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">archives/2019/07/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">page/2/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">archives/page/3/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">archives/page/4/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">archives/2015/10/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">archives/2016/03/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">archives/2016/05/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">archives/2017/08/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">archives/2018/05/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">archives/2018/11/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">archives/2019/09/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">page/3/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">page/4/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">fonts/FontAwesome.otf</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">fonts/fontawesome-webfont.ttf</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">archives/2013/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">archives/2015/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">archives/2016/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">archives/2017/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">archives/2017/09/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">archives/2018/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">archives/2019/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">css/comment.css</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">js/dbapi.js</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">fonts/google-fonts/0AKsP294HTD-nvJgucYTaIbN6UDyHWBl620a-IRfuBk.woff</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">css/bootstrap-responsive.css</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">fancybox/jquery.fancybox.pack.js</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">js/comment.js</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">css/google-fonts.css</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">css/highlight-default.min.css</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">css/highlight.css</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">css/responsive.css</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">js/gallery.js</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">js/github.js</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">js/jquery.imagesloaded.min.js</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">js/main.js</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">js/search.js</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">js/spin.min.js</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">js/timeago.min.js</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">fonts/google-fonts/2UX7WLTfW3W8TclTUvlFyQ.woff</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">fonts/google-fonts/LKf8nhXsWg5ybwEGXk8UBQ.woff</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">fonts/google-fonts/PIPMHY90P7jtyjpXuZ2cLD8E0i7KZn-EPnyo3HZu7kw.woff</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">fonts/google-fonts/UyYrYy3ltEffJV9QueSi4RdbPw3QSf9R-kE0EsQUn2A.woff</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">fonts/google-fonts/cj2hUnSRBhwmSPr9kS5899kZXW4sYc4BjuAIFc1SXII.woff</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">fonts/google-fonts/lILlYDvubYemzYzN7GbLkHhCUOGz7vYGh680lGh-uXM.woff</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">fonts/google-fonts/0XxGQsSc1g4rdRdjJKZrNBsxEYwM7FgeyaSgU71cLG0.woff</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">archives/2017/09/page/2/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">archives/2017/page/2/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">css/font-awesome.css</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">js/bootstrap.min.js</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">js/marked.js</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">css/style.css</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">css/themes/common.css</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">css/themes/default.css</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2019/07/17/心情糟透了/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2018/11/16/中國人前輩努力為我洗腦之後/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2017/09/30/爱的吸引/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2016/05/16/A-Real-time-Automatic-Level-Bar-Calibration-Based-on-Canny-Edge-Detection-and-Weighted-Least-Squares-Method/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2015/10/23/Reference/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2013/01/25/feelings-I-m-missing-you/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2018/05/19/探索研究/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2018/03/27/日本語レッスン進捗/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2017/08/22/面膜/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2017/07/24/Snippet/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2016/03/03/hello-world/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2015/09/23/关于意义疗法/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2019/09/30/Hexo-Notebook/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2016/02/03/意义疗法导论/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2019/07/16/死蔭的幽谷/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2017/09/29/戀愛交往的兩個原則/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2017/09/22/睡不着/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2017/09/19/情殺/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2017/09/18/被开发环境的设计实现验证的问题困扰了三天之久/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2017/09/07/认耶稣为主/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2017/09/04/我發現脫離了人群我就不能活/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2017/09/03/心理防卫机制/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2017/09/01/就算累也必須堅持學日語/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2017/08/20/Skype授業/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2017/08/16/JavaScript/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2017/07/21/除了我的妻子以外，凡拉黑我的都去屎。/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2015/09/03/My-First-Test/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2018/11/11/论道德的谱系/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2017/09/14/人間失格/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2017/07/22/Hexo-研究/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2015/09/30/最近码代码手感不错哟/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2017/09/14/人间失格/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2016/02/03/一个心理学家在集中营的经历/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">2015/09/03/Preface/index.html</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">js/highlight.min.js</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">fonts/fontawesome-webfont.svg</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">css/bootstrap.min.css</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">js/jquery-2.0.3.min.js</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">css/themes/united.css</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">css/themes/bootstrap.css</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">css/themes/cerulean.css</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">css/themes/cosmo.css</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">css/themes/cyborg.css</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">css/themes/darkly.css</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">css/themes/journal.css</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">css/themes/readable.css</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">css/themes/sandstone.css</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">css/themes/simplex.css</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">css/themes/spacelab.css</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">css/themes/superhero.css</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">css/themes/yeti.css</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">css/themes/flatly.css</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">css/themes/lumen.css</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">css/themes/slate.css</span>
+<span class="ansi-green-fg">INFO </span> Generated: <span class="ansi-magenta-fg">css/themes/paper.css</span>
+<span class="ansi-green-fg">INFO </span> 137 files generated in <span class="ansi-cyan-fg">1.94 s</span>
+<span class="ansi-green-fg">INFO </span> Deploying: <span class="ansi-magenta-fg">git</span>
+<span class="ansi-green-fg">INFO </span> Clearing .deploy folder...
+<span class="ansi-green-fg">INFO </span> Copying files from public folder...
+[master 5ea11d8] Site updated: 2019-09-30 00:54:25
+ 2 files changed, 110 insertions(+), 4 deletions(-)
+To https://github.com/seii-saintway/seii-saintway.github.io.git
+   be585f7..5ea11d8  master -&gt; master
+Branch &#39;master&#39; set up to track remote branch &#39;master&#39; from &#39;https://github.com/seii-saintway/seii-saintway.github.io.git&#39;.
+<span class="ansi-green-fg">INFO </span> Deploy done: <span class="ansi-magenta-fg">git</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+ 
+
+
+
+
+	</div>
+
+	<div>
+  	<center>
+	<div class="pagination">
+<ul class="pagination">
+	 
+		
+          <li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i>上一页</a></li>
+        
+
+        <li><a href="/archives"><i class="fa fa-archive"></i>Archive</a></li>
+
+		
+		   <li class="next"><a href="/2019/07/17/心情糟透了/" class="alignright next">下一页<i class="fa fa-arrow-circle-o-right"></i></a></li>         
+        
+	
+</ul>
+</div>
+
+    </center>
+	</div>
+	
+	<!-- comment -->
+	
+<section id="comment">
+  <h2 class="title">留言</h2>
+
+  <script data-isso="http://jhub.name:8000/" src="http://jhub.name:8000/js/embed.min.js"></script>
+  <section id="isso-thread"></section>
+  
+</section>
+
+	
+	</div> <!-- col-md-9/col-md-12 -->
+	
+	
+		<div class="col-md-3"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2019-10-05 
+	</div>
+	
+
+	<!-- categories -->
+    
+
+	<!-- tags -->
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	
+
+</div><!-- row -->
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  &copy; 2019 Andrew
+  
+      with help from <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>.    
+</p> </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+</body>
+   </html>
