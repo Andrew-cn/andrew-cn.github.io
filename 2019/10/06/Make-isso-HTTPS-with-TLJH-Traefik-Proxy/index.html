@@ -335,6 +335,130 @@ cat <span class="s">&lt;&lt; EOF | sudo tee -a /opt/tljh/state/rules.toml &gt; /
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Change-file-watch-to-directory-in-TLJH-Traefik">Change file-watch to directory in TLJH Traefik<a class="anchor-link" href="#Change-file-watch-to-directory-in-TLJH-Traefik">&#182;</a></h1><p><a href="https://github.com/seii-saintway/the-littlest-jupyterhub/commit/e95d85e99187f9d65b748016807b28c256e77e39" target="_blank" rel="noopener">https://github.com/seii-saintway/the-littlest-jupyterhub/commit/e95d85e99187f9d65b748016807b28c256e77e39</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span>%%bash
+cat <span class="s">&lt;&lt; EOF | sudo tee /opt/tljh/state/dynamic/isso.toml &gt; /dev/null</span>
+
+<span class="s">[frontends.isso]</span>
+<span class="s">backend = &quot;isso&quot;</span>
+<span class="s">passHostHeader = true</span>
+
+<span class="s">[frontends.isso.routes.f1]</span>
+<span class="s">rule = &quot;PathPrefixStrip:/isso/&quot;</span>
+
+<span class="s">[backends.isso.servers.s1]</span>
+<span class="s">url = &quot;http://127.0.0.1:8000&quot;</span>
+<span class="s">weight = 1</span>
+<span class="s">EOF</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>sudo /opt/tljh/hub/bin/python -m tljh.installer
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Granting passwordless sudo to JupyterHub admins...
+Setting up user environment...
+
+
+==&gt; WARNING: A newer version of conda exists. &lt;==
+  current version: 4.5.8
+  latest version: 4.7.12
+
+Please update conda by running
+
+    $ conda update -n base conda
+
+
+Setting up JupyterHub...
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>sudo cat /opt/tljh/installer.log
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2019-10-13 15:21:02,889 Granting passwordless sudo to JupyterHub admins...
+2019-10-13 15:21:02,890 Setting up user environment...
+2019-10-13 15:21:26,052 Setting up JupyterHub...
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span><span class="nb">cd</span> ~ <span class="o">&amp;&amp;</span> make restart-isso
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
  
 
 
